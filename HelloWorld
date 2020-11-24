@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //создал два стринга для "Hello" "world!"
+        String Hello = new String ("Hello");
+        String World = new String (" world!");
+
+
+// создал вывод на консоль для того, что б юзер знал, что требуеться ввести
+        System.out.println("Please type Hello");
+
+// создал ввод для первого слова "Hello"
+// как сделать так, что б строка ввода не исчезала
+// пока юзер все таки не введет "Hello"?
+
+        Scanner scanner1 = new Scanner (System.in);
+        String input1 = scanner1.nextLine();
+
+        if (Hello.equals(input1)) {
+           System.out.println("Type world");
+        } else {
+            System.out.println("Please type Hello");
+        }
+// создал ввод для первого слова "Hello"
+// как сделать так, что б строка ввода не исчезала
+// пока юзер все таки не введет "Hello"?
+
+        Scanner scanner2 = new Scanner (System.in);
+        String input2 = scanner2.nextLine();
+
+        if (Hello.equals(input1)) {
+            System.out.println(Hello+World);
+        } else {
+            System.out.println("Please type world");
+        }
+
+    }
+
+
+
+
+        }
